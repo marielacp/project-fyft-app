@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+}
+.cont-flags ,.cont-country{
+width: 100%;
+height: 35px;;
+border: 1px solid red;
+display: inline-block;
+margin: 0;
+}
+.form-flag{
+  display: inline-block;
+  float: left;
+}
+.padding-cero{
+  padding: 0;
+  margin: 0;
+}
+.inphone{
+  border:2px solid blue;
+  size: 25rem;
+}
