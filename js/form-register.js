@@ -5,10 +5,10 @@ $(document).ready(function() {
   var $checkbox = $('input[type="checkbox"]');
   var $submit = $('#next');
 
-  /* Iniciamos con focus en input Name*/
+  /* Start con focus en input Name*/
   $firstName.focus(); 
 
-  /* Ocultamos mensajes de alerta para cada input */
+  /* hidden mensajes de alerta para cada input */
   $('.alert1').hide();
   $('.alert2').hide();
   $('.alert3').hide();
@@ -25,8 +25,8 @@ $(document).ready(function() {
   }); 
 
   $lastName.on('input', function(event) {
-    /* Comprobando que no ingrese vacios o que no ingrese datos numericos*/
-    if (($(this).val() == '') || ($(this).val().match(/[1-9]/))) {
+    /* Comprobando que no ingrese vacios o que no ingrese datos number*/
+    if (($(this).val() =='') || ($(this).val().match(/[1-9]/))) {
       $(this).val('');
       $('.alert2').show();
     } else {
@@ -49,7 +49,7 @@ $(document).ready(function() {
   /* Boton next o submit si los datos se validan correctamente nos trasladamos al la pagina final */
   $submit.click(function(event) {
     /* console.log(event.target.checked) */
-    if ($checkbox.prop('checked') && ($firstName.val()!== '') && ($lastName.val()!== '') && ($email.val()!== '')) {
+    if ($checkbox.prop('checked') && ($firstName.val()!=='') && ($lastName.val()!=='') && ($email.val()!=='')) {
       event.preventDefault();
       window.location.href = '../views/end.html';
     } else {

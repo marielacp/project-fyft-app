@@ -28,4 +28,14 @@ body {
   background: transparent;
   width: 35%;
   height: 5vh;
+  padding: 3rem;
+   border:1px solid white;
+}
+.next-active:hover {
+  background-color: #ea0b8c;
+  border: none;
+  color: white;
+  font-weight: bold;
+
+  
 }
