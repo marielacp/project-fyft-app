@@ -1,8 +1,7 @@
 body {
 	font-family: 'Raleway', sans-serif !important;
-	color: black;
+	color: white;
 }
-
 .background{
 	background: linear-gradient(rgb(231, 10, 141), rgb(199, 11, 140))
 }
@@ -12,8 +11,10 @@ body {
   justify-content:center;
   padding: 2rem; 
 }
-
-img{
+.heigth{
+  height: 100vh;
+}
+.logo{
 	animation-duration: 3s;
 	animation-name: slidein;
 }
@@ -31,17 +32,90 @@ img{
 		
 	}
 }
+
 /*Stylo formulario Login*/
 
-.img1{
-background-image:url('../assets/img/b-chile.png') ;
- background-repeat: no-repeat;
- background-size: cover;
-
+.img{
+  background-image:url('../assets/img/b-chile.png') ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .fondo{
-background-color: black;
-width: 100%;
-height: 200px;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  }
+
+/* Estylos de Sign UP*/
+.border-glypghicon{
+  position: absolute;
+  border: 4px solid white;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  color:white;
+  text-align: center;
+}
+.ancor{
+ text-decoration: none;
+ color: white;
+}
+.cont-fla{
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+.float{
+  float: left;
+  display: inline-block;
+  }
+.inp-border{
+  border: none; 
+  height: 5vh;
+}
+.hr{
+  border: 2px solid rgb(199, 11, 140);
+}
+.next-disabled{
+  background-color: rgb(240, 205, 226);
+  border: none;
+  color: #a18096;
+}
+.next-disabled:hover {
+  background-color: #ea0b8c;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.next-active {
+  background-color: rgb(236, 61, 166); 
+  border: none;
+   color: white;
+   font-weight: bold;
+}
+.next-active:hover {
+  background-color : #ea0b8c;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.color-txt{
+  color:rgb(199, 11, 140);
+}
+.color-txt1 ,#inp-check{
+  color:black;
+  font-weight: bold;
+}
+/*style phone-verification*/
+.inp-border1 {
+  border: 4px solid #ea0b8c;
+  height: 5vh;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+/*Style end*/
+.end-img{
+  display: inline-block;
 }

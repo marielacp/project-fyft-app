@@ -37,7 +37,7 @@ $(document).ready(function () {
         }else{
           $initNewStoreOne = false;
         }
-        if ($ifinitNewStoreOne === true && $ifinitNewStoretwo === true && $ifinitNewStorethree ===true) {
+        if ($initNewStoreOne === true && $initNewStoretwo === true && $initNewStorethree === true) {
           $send.removeAttr('disabled');
         //  $send.addClass('btn-enabled');
         } else {
@@ -51,7 +51,7 @@ $(document).ready(function () {
         } else {
           $initNewStoreTwo = false;
         }
-        if ($ifinitNewStore === true && $ifinitNewStoretwo === true && $ifinitNewStorethree === true) {
+        if ($initNewStore === true && $initNewStoretwo === true && $initNewStorethree === true) {
           $send.removeAttr('disabled');
           //  $send.addClass('btn-enabled');
         } else {
@@ -65,7 +65,7 @@ $(document).ready(function () {
         } else {
           $initNewStoreThree = false;
         }
-        if ($ifinitNewStoreOne === true && $ifinitNewStoretwo === true && $ifinitNewStorethree === true) {
+        if ($initNewStoreOne === true && $initNewStoretwo === true && $initNewStorethree === true) {
           $send.removeAttr('disabled');
           //  $send.addClass('btn-enabled');
         } else {
@@ -74,10 +74,10 @@ $(document).ready(function () {
         }
       })
     })
-  
 
 /* redireccionamiento a la vista formulario*/
 $send.click(function () {
+
   window.location.href = '../views/form-register.html';
 });
 

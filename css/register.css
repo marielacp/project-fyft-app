@@ -16,16 +16,16 @@ body {
   background-position: bottom; 
 }
 .cont-register {
-display: flex;
-justify-content:space-around;
-align-items:flex-end;
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-end;
 }
 .cregister{
-display: flex;
-justify-content:center;
-align-items: center;
-width: 20%;
-background: transparent;
-width: 35%;
-height: 5vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 20%;
+  background: transparent;
+  width: 35%;
+  height: 5vh;
 }

@@ -7,24 +7,45 @@
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">  
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
   <link rel="stylesheet" href="">
-  <title>SignUp</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Phone-Verification</title>
 </head>
-<body>
-  <main>
-  <div class="container">
+<body  class=" heigth">
+  <nav>
+    <div class="container-fluid background container-flex-column">
       <div class="row">
-        <div class="col-xs-12"> 
-          <span>lab_</span>       
-          <input type="text" id="codRandom1">
-          <input type="text" id="codRandom2">
-          <input type="text" id="codRandom3">
-          <p class=" text-verify">Enter the code sent to +52</p>
+        <div class="col-xs-1">
+          <div class=" border-glypghicon">
+            <h1 class="glyphicon glyphicon-menu-left"></h1>
           </div>
-          <button type="button" class="btn btn-default btn-resent" id="btn-to-reset">Resent Code</button>
-          <!--boton next-->
-          <button type="button" class="btn btn-default btn-lg btn-block text-uppercase " id="next-cod">next</button>
+        </div>
+        <div class="col-xs-11">
+          <h1 class="text-center">SIGN-UP</h1>
+          <h3 class="text-center">Join now for free ride credit</h3>
+          <hr>
+        </div>
       </div>
-    </div>    
+    </div>
+  </nav>
+
+<main>
+  <div class="container color-txt1">
+    <div class="row">
+      <div class="col-xs-12" > <br>
+        <span class="color-txt1">Lab_</span>       
+        <input type="text" class="inp-border1 " size="5" id="codRandom1">   
+        <input type="text" class="inp-border1 " size="5" id="codRandom2">
+        <input type="text" class="inp-border1 " size="5" id="codRandom3">
+        <br><br>
+        <p class=" ">Enter the code sent to +52</p>
+        </div>
+        <!--boton Resetear Codigo-->
+        <button type="button" class="btn btn-default btn-resent" id="btn-to-reset">Resent Code</button>
+        <!--boton next-->
+        <br><br>
+        <button type="button" class="btn btn-default btn-lg btn-block next-disabled" id="next-cod">Next</button>        
+    </div>
+  </div>    
 </main>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/jquery-numeric/jquery.numeric.js"></script>
@@ -32,5 +53,4 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

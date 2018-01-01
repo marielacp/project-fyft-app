@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+  <link rel="stylesheet" href="../css/main.css">
+  <title>SignUp</title>
+</head>
+<body class=" heigth"> 
+<!--Navbar-->
+<nav>
+  <div class="container-fluid background container-flex-column" >
+    <div class="row">
+      <div class="col-xs-1">
+        <div class=" border-glypghicon">
+          <h1 class="glyphicon glyphicon-menu-left"></h1>
+        </div>           
+      </div>       
+      <div class="col-xs-11">
+        <h1 class="text-center">SIGN-UP</h1>
+        <h3 class="text-center">Join now for free ride credit</h3>
+      <hr>
+      </div>
+    </div>
+  </div>    
+</nav>
+<!--Area formulario-->
+<main>
+  <div class="container-fluid">
+    <div class="row container-flex-column">
+      <div class="col-xs-12">
+        <h1 class="text-center color-txt "> Ingresa tus datos</h1>
+        <br>   
+        <div>
+          <form action="" method="post" id="validate-form">
+            <div class="float">
+            <select class="form-control" id="select-control">
+              <option value="pais">Pais:</option>
+              <option value="peru">Peru</option>
+              <option value="mexico">Mexico</option>
+              <option value="colombia"> colombia </option>
+              <option value="chile"> Chile</option>
+            </select>
+            </div>            
+            <figure class="cont-flags float">
+              <img src="" alt="" class="cont-fla img-responsive" maxlength="5" size="2" id="img">
+            </figure>
+            <div class="float ">
+              <div class="float">
+                <input type="text" id="input-code" size="8" class="inp-border color-txt1 text-right" placeholder="Elegir-Pais">
+              </div>    
+              <div class="float">
+                <input class="form-control integer positive inp-border" maxlength="10" id="inputPhone" placeholder="phone">
+              </div>
+              <div>               
+                <hr class="hr">
+              </div>
+            </div>
+        </div>
+      </div><br>
+      <div class="col-xs-12">
+        <h4 class="text-center color-txt">We'll send a text to verify your phone</h4>
+        <hr>
+        <div class="center-block">
+          <button type="button" id="next" class="btn btn-lg btn-block next-disabled" disabled> NEXT </button>
+        </div>
+      </div>    
+          </form>
+        </div>
+      </div>    
+    </div>
+  </div>
+</main>
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../vendors/jquery-numeric/jquery.numeric.js"></script>
+  <script src="../js/signup.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</body>
+</html>
