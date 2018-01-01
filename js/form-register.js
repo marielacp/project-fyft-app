@@ -34,7 +34,7 @@ $(document).ready(function() {
     }
   });
 
-/* Comprobando que no ingrese vacio o que no ingrese datos numericos aplicamos evento focusout para evitar que pierda el foco del input */
+  /* Comprobando que no ingrese vacio o que no ingrese datos numericos aplicamos evento focusout para evitar que pierda el foco del input */
   $email.focusout(function() {  
     var PATERNEMAIL = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     var restringerEmail = PATERNEMAIL.test($(this).val());  
@@ -43,18 +43,18 @@ $(document).ready(function() {
       $(this).val('');
     } else {
       $('.alert3').hide();
-    };
+    }
   });
- /* Boton next o submit si los datos se validan correctamente nos trasladamos al la pagina final */
-  $submit.click( function (event) {
-    console.log(event.target.checked)
-    if ($checkbox.prop('checked') && ($firstName.val() != "") && ($lastName.val() != "") && ($email.val() != "")){
+
+  /* Boton next o submit si los datos se validan correctamente nos trasladamos al la pagina final */
+  $submit.click(function(event) {
+    /* console.log(event.target.checked) */
+    if ($checkbox.prop('checked') && ($firstName.val()!== '') && ($lastName.val()!== '') && ($email.val()!== '')) {
       event.preventDefault();
       window.location.href = '../views/end.html';
     } else {
       alert('Por favor complete todos los campos');
       event.preventDefault();
-    }
-    
+    }    
   });
 });
