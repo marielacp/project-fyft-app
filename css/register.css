@@ -29,7 +29,8 @@ body {
   width: 35%;
   height: 5vh;
   padding: 3rem;
-   border:1px solid white;
+   border:2px solid white;
+   margin-bottom: 4rem;
 }
 .next-active:hover {
   background-color: #ea0b8c;
